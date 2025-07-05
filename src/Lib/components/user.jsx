@@ -6,7 +6,9 @@ export default function User({name = "Daniel Ukuhor",position = "Software Engine
 
     return (
               <div className="flex">
-                <Image className="rounded-full" src={imageSrc} width={20} height={20}/>
+                <div className="w-[3rem] h-[3rem] overflow-hidden rounded-full flex items-center justify-center" >
+                  <Image className="rounded-full"  alt="Your Profile image" src={imageSrc}  width={48} height={48}/>
+                </div>
                 <div>
                     <p>{name}</p>
                     <p>{position}</p>
