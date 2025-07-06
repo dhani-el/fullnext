@@ -13,7 +13,7 @@ export default function ImageAvatar({url,size,orientation=""}){
     }
 
     return (
-                <div style={{width:`${size}px`,height:`${size}px`}} className={` relative bg-red-900 overflow-hidden rounded-full flex ${positionImage()} `} >
+                <div style={{width:`${size}px`,height:`${size}px`}} className={` relative overflow-hidden rounded-full flex ${positionImage()} `} >
                     <Image className="rounded-full"  alt="Your Profile image" src={url} objectFit="cover"  fill />
                 </div>
             )

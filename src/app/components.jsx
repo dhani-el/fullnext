@@ -11,7 +11,7 @@ export function Header(){
                 <HamburgerMenu className="block md:hidden" />
                 <Logo/>
                 <SearchBar/>
-                <div className="flex gap-4">
+                <div className="flex gap-8">
                     <Notification/>
                     <User/>
                 </div>
@@ -20,11 +20,11 @@ export function Header(){
 }
 
 function Logo(){
-  const school_name = "Charis"
+  const school_name = "Early Beginners"
 
     return (
                 <div>
-                    <p className="text-2xl" >{school_name}</p>
+                    <p className="text-2xl font-extrabold" >{school_name}</p>
                 </div>
             )
 }
